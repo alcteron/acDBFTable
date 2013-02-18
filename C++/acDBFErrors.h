@@ -2,31 +2,31 @@
 #ifndef AC_DBF_NO_ERRORS
   #define AC_DBF_NO_ERRORS
 
-	//действие выполнено без ошибок
+	// Operation successful
     #define ERR_NOERRORS 0
-	//Ошибка при открытии таблицы (скорее всего файл не найден)
+	// Table opening error (file not found)
 	#define ERR_CANT_OPEN_TABLE 1
-	//Ошибка чтения файла файла
+	// Error reading data from file
 	#define ERR_CANT_READ_FROM_TABLE 2
-	//Ошибка записи в файл
+	// Error writing data to file
 	#define ERR_CANT_WRITE_TO_TABLE 3
-	//Заголовок файла не соответствует формату
+	// Incorrect file header
 	#define ERR_WRONG_TABLE_FORMAT 4
-	//Несовместимый формат поля
+	// Unsupported field type
 	#define ERR_INCOMPATIBLE_FIELD_TYPE 5
-	//Некорректное значение индекса (Например в GoToRecord( dword ))
+	// Incorrect index value (For example in GoToRecord( dword ))
 	#define ERR_WRONG_INDEX 6
-	//Недопустимое значение поля
+	// Invalid field value
 	#define ERR_WRONG_VALUE 7
-	//Заголовок таблицы содержит некорректные данные
+	// Incorrect data in table header
 	#define ERR_INCORRECT_HEADER_DATA 8
-	//Ошибка удаления индекса
+	// Index deteion error
 	#define ERR_INDEX_CLEARING_ERROR 9
-	//Попытка обратиться к несуществующему индексу (Например в GoToIndex (dword))
+	// Attempt to access to the non exist index (For example in GoToIndex (dword))
 	#define ERR_INDEX_NOT_EXIST 10
-	//Ошибка выделения памяти
+	// Memory allocation error
 	#define ERR_CANT_ALLOC_MEMORY 11
-	//Ошибка при сохранении таблицы в файл
+	// Table saving error
 	#define ERR_CANT_SAVE_TABLE 12
 
 #endif
